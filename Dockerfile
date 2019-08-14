@@ -56,6 +56,8 @@ RUN apt-get update
 RUN apt-get install -y dotnet-sdk-2.2
 RUN rm packages-microsoft-prod.deb
 
+# redis-cli
+RUN apt-get install -y redis-server
 
 WORKDIR /app
 
